@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="file:\\\C:\\Users\\Daniel\Documents\\NodeJS\\pdf\\bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div class="card" style="width: 18rem;">
+      <img src="file:\\\C:\\Users\\Daniel\Documents\\NodeJS\\pdf\\perfil.png" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Daniel Santos Lara</h5>
+        <p class="card-text">ESTUDIANTE DEL ISTITUTO TECNOLOGICO DE TIJUANA.</p>
+        <a href="#" class="btn btn-primary">Ver perfil</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-justify">
+    <h2>Acerca de Node.js</h2>
+    <P>
+      Concebido como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node.js está diseñado para
+      construir aplicacionesen red escalables.
+      En la siguiente aplicación de ejemplo "hola mundo", se pueden manejar muchas conexiones concurrentes. Por cada
+      conexión el callback será ejecutado, sin embargo si no hay trabajo que hacer Node.js estará durmiendo.
+    </P>
+    <img src="file:\\\C:\\Users\\Daniel\Documents\\NodeJS\\pdf\\captura.png">
+    <p>
+      Esto contrasta con el modelo de concurrencia más común hoy en día, donde se usan hilos del Sistema Operativo. Las
+      operaciones de redes basadas en hilos son relativamente ineficientes y son muy difíciles de usar. Además, los
+      usuarios de Node.js están libres de preocupaciones sobre el bloqueo del proceso, ya que no existe. Casi ninguna
+      función en Node.js realiza I/O directamente, así que el proceso nunca se bloquea. Debido a que no hay bloqueo es
+      muy razonable desarrollar sistemas escalables en Node.js.
+    </p>
+    <P>
+        Node.js tiene un diseño similar y está influenciado por sistemas como Event Machine de Ruby ó Twisted de Python. Node.js lleva el modelo de eventos un poco más allá, este presenta un bucle de eventos como un entorno en vez de una librería. En otros sistemas siempre existe una llamada que bloquea para iniciar el bucle de eventos. El comportamiento es típicamente definido a través de callbacks al inicio del script y al final se inicia el servidor mediante una llamada de bloqueo como EventMachine::run(). En Node.js no existe esta llamada. Node.js simplemente ingresa el bucle de eventos después de ejecutar el script de entrada. Node.js sale del bucle de eventos cuando no hay más callbacks que ejecutar. Se comporta de una forma similar a JavaScript en el navegador - el bucle de eventos está oculto al usuario.
+
+        HTTP es ciudadano de primera clase en Node.js, diseñado con operaciones de streaming y baja latencia en mente. Esto hace a Node.js candidato para ser la base de una librería o un framework web.
+        
+        Solo porque Node.js esté diseñado sin hilos, no significa que usted no puede aprovechar los múltiples cores de su sistema. Procesos hijos pueden ser lanzados usando nuestra API [child_process.fork()][], la cual está diseñada para comunicarse fácilmente con el proceso principal. Construida sobre la misma interfaz está el módulo [cluster][], el cual permite compartir sockets entre procesos para activar el balanceo de cargas en sus múltiples cores.
+      
+    </P>
+  </div>
+
+ 
+
+  
+ <!-- Footer -->
+ <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://nodejs.org">nodejs.org</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
